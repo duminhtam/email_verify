@@ -14,9 +14,8 @@ func main(){
 	}
 	rows, err := db.Query("SELECT * FROM users")
 
-	for rows.Next(){
-		rows.Scan("a")
-	}
+	fmt.Println(rows)
+
 //	fmt.Print(VerifyEmail("tamdu@chotot.vn"))
 }
 
