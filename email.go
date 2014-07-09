@@ -7,14 +7,14 @@ import (
 )
 
 func main(){
-	db, err := sql.Open("postgres", "host=/dev/shm/regress-tam/pgsql0/data dbname=blocketdb sslmode=verify-full")
+	_, err := sql.Open("postgres", "host=/dev/shm/regress-tam/pgsql0/data dbname=blocketdb sslmode=verify-full")
 
 	if err != nil {
 		fmt.Print(err)
 	}
-	rows, err := db.Query("SELECT * FROM users")
-
-	fmt.Println(rows)
+//	rows, err := db.Query("SELECT * FROM users")
+//
+//	fmt.Println(rows)
 
 //	fmt.Print(VerifyEmail("tamdu@chotot.vn"))
 }
