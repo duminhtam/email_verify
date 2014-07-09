@@ -7,7 +7,7 @@ import (
 )
 
 func main(){
-	db, err := sql.Open("postgres", "postgres://dev/shm/regress-tam/pgsql0/data")
+	db, err := sql.Open("postgres", "host=/dev/shm/regress-tam/pgsql0/data dbname=blocketdb sslmode=verify-full")
 
 	if err != nil {
 		fmt.Print(err)
