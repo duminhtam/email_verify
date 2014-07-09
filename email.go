@@ -7,7 +7,7 @@ import (
 )
 
 func main(){
-	db, err := sql.Open("postgres", "postgres://pqgotest:password@localhost/pqgotest?sslmode=verify-full")
+	db, err := sql.Open("postgres", "postgres://dev/shm/regress-tam/pgsql0/data")
 
 	if err != nil {
 		fmt.Print(err)
