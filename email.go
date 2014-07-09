@@ -5,7 +5,7 @@ import (
 )
 
 func main(){
-	fmt.Fprint(VerifyEmail("tamdu@chotot.vn"))
+	fmt.Print(VerifyEmail("tamdu@chotot.vn"))
 }
 
 
